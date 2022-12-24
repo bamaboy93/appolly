@@ -1,0 +1,72 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6c6c72;
+  background-color: #fff;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 0px 15px;
+
+  @media screen and (min-width: 375px) {
+    width: 375px;
+    padding: 0px 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 0px 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding: 0px 15px;
+  }
+}
+
+.header-hero__wrapper {
+  position: relative;
+  z-index: 1;
+  background: url(../../images/bg-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media screen and (max-width: 1199px) {
+    background-position: center;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  display: block;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}

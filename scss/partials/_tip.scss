@@ -1,0 +1,33 @@
+.section--tip {
+  position: relative;
+  background-color: $accent;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 150px;
+    background-image: url(../../images/tip-bg.png);
+    background-position: center;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 200px;
+  }
+}
+
+.tip__video {
+  position: absolute;
+  bottom: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 343px;
+  height: 150px;
+  border-radius: 10px;
+
+  @media screen and (min-width: $tablet) {
+    bottom: -115px;
+    width: 559px;
+    height: 231px;
+  }
+  @media screen and (min-width: $desktop) {
+    bottom: -160px;
+    width: 770px;
+    height: 319px;
+  }
+}

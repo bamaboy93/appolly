@@ -1,0 +1,64 @@
+.section {
+  padding: 60px 0;
+  text-align: center;
+
+  &--features {
+    background: url(../../images/features-bg-mobile.png);
+
+    @media screen and (min-width: $tablet) {
+      background: url(../../images/bg-image.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+.section__title {
+  margin-bottom: 18px;
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: $dark-grey;
+  text-shadow: $title-text-shadow;
+
+  @media screen and (min-width: $tablet) {
+    font-weight: 700;
+    font-size: 31.25px;
+  }
+
+  &--white {
+    color: $white;
+  }
+
+  &--app {
+    text-align: left;
+    @media screen and (max-width: $max-tablet) {
+      width: 288px;
+    }
+  }
+}
+
+.section__desc {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 600px;
+  }
+
+  &--white {
+    color: $white;
+  }
+  &--app {
+    width: auto;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

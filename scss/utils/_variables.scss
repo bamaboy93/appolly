@@ -1,0 +1,25 @@
+// Colors
+$white: #ffffff;
+$black: #000000;
+$light-grey: #6c6c72;
+$dark-grey: #232233;
+$accent: #5956e9;
+
+// Transition Prop
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+
+// Text-Box Shadows
+$title-text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+  0px -4px 10px rgba(255, 255, 255, 0.3);
+
+$main-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+  rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+$secondary-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+  rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+// Breakpoints
+$mobile: 375px;
+$max-mobile: 767px;
+$tablet: 768px;
+$max-tablet: 1199px;
+$desktop: 1200px;

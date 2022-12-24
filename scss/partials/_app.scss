@@ -1,0 +1,64 @@
+.app__wrapper {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.app__box {
+  @media screen and (min-width: $tablet) {
+    width: 329px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 570px;
+  }
+}
+
+.app__picture {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    padding-top: 85px;
+  }
+}
+
+.app__stores--list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  @media screen and (min-width: $desktop) {
+    width: 325px;
+  }
+}
+
+.app__list {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.app__item {
+  width: 101px;
+  padding: 12px 0;
+  background-color: $accent;
+  box-shadow: $secondary-box-shadow;
+  border-radius: 5px;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.app__icon {
+  fill: $white;
+}
+
+.app__number {
+  font-weight: 600;
+  font-size: 20px;
+
+  color: $white;
+}
+
+.app__action {
+  font-weight: 400;
+  font-size: 16px;
+
+  color: $white;
+}

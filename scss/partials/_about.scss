@@ -1,0 +1,75 @@
+.about__wrapper {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.picture__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 75px;
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    bottom: -30px;
+    content: "";
+    width: 212px;
+    height: 71px;
+    background-image: url(../../images/Ellipse.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.about__list {
+  @media screen and (min-width: $desktop) {
+    padding-top: 50px;
+  }
+}
+
+.about__item {
+  display: flex;
+
+  width: 343px;
+  padding: 18px 16px 10px 19px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: left;
+
+  @media screen and (min-width: $tablet) {
+    width: 391px;
+    padding: 18px 30px 10px 21px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 570px;
+    padding: 30px 20px 21px 18px;
+  }
+  &:not(:last-child) {
+    margin-bottom: 20px;
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.about__info {
+  margin-left: 18px;
+}
+.about__icon {
+  padding-top: 4px;
+  fill: $accent;
+}
+
+.about__subtitle {
+  margin-bottom: 3px;
+  font-weight: 600;
+  font-size: 20px;
+
+  text-transform: uppercase;
+
+  color: $dark-grey;
+}

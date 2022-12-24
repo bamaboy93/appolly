@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Appolly</title>
+  </head>
+  <body>
+    <div class="header-hero__wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header-topline">
+            <ul class="header-topline__list">
+              <li class="header-topline__item">
+                <a class="header-topline__link" href="#"
+                  ><svg class="header-topline__icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-mail"></use></svg
+                  >info@youremail.com</a
+                >
+              </li>
+              <li class="header-topline__item">
+                <a class="header-topline__link" href="#"
+                  ><svg class="header-topline__icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-phone-fill"></use></svg
+                  >(480) 555-0103</a
+                >
+              </li>
+            </ul>
+
+            <ul class="header-socials">
+              <li class="header-socials__item">
+                <a class="header-socials__link" href="#"
+                  ><svg class="header-socials__icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="header-socials__item">
+                <a class="header-socials__link" href="#"
+                  ><svg class="header-socials__icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="header-socials__item">
+                <a class="header-socials__link" href="#"
+                  ><svg class="header-socials__icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="header-socials__item">
+                <a class="header-socials__link" href="#"
+                  ><svg class="header-socials__icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-youtube"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-main">
+            <ul class="header-main__list">
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">Home</a>
+              </li>
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">About</a>
+              </li>
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">Features</a>
+              </li>
+            </ul>
+            <button type="button" class="header-main__button--menu">
+              <svg width="24" height="24">
+                <use href="./images/sprite.svg#icon-menu"></use>
+              </svg>
+            </button>
+            <div class="header-main__logo">
+              <img
+                src="./images/logo-m.png"
+                alt="logo"
+                width="79"
+                height="12"
+              />
+            </div>
+            <ul class="header-main__list header-main__list--right">
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">Screenshot</a>
+              </li>
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">Blog</a>
+              </li>
+            </ul>
+            <button class="header-main__button" type="button">DOWNLOAD</button>
+          </div>
+        </div>
+      </header>
+      <section class="hero container">
+        <div class="hero-main">
+          <div class="hero__wrapper">
+            <h1 class="hero__title">
+              A Great App Makes <br />
+              Your Life Better
+            </h1>
+            <p class="hero__desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+            <h2 class="hero__subtitle">Download App Now</h2>
+            <ul class="hero__stores">
+              <li class="hero__stores--item">
+                <img
+                  src="./images/google-play.png"
+                  alt="google play shortcut"
+                  width="110"
+                  height="32"
+                />
+              </li>
+              <li class="hero__stores--item">
+                <img
+                  src="./images/app-store.png"
+                  alt="app store shortcut"
+                  width="110"
+                  height="32"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="hero__image">
+            <picture>
+              <source
+                srcset="./images/hero-image.png"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="./images/hero-image-desktop.png"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/hero-image-tablet.png"
+                media="(max-width: 1199px)"
+              />
+              <img src="./images/hero-image.png" alt="smartphone picture" />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </div>
+    <main>
+      <!-- Section About -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">About Our App</h2>
+
+          <p class="section__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+            nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+            Faucibus amet etiam tincidunt rhoncus.
+          </p>
+
+          <div class="about__wrapper">
+            <div class="picture__wrapper">
+              <picture>
+                <source
+                  srcset="./images/smartphone.png"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/smartphone-desktop.png"
+                  media="(min-width: 1200px)"
+                />
+
+                <img src="./images/smartphone.png" alt="smartphone picture" />
+              </picture>
+            </div>
+            <ul class="about__list">
+              <li class="about__item">
+                <svg class="about__icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-checkbox"></use>
+                </svg>
+                <div class="about__info">
+                  <h3 class="about__subtitle">Creative design</h3>
+
+                  <p class="about__desc">
+                    Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
+                  </p>
+                </div>
+              </li>
+              <li class="about__item">
+                <svg class="about__icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-checkbox"></use>
+                </svg>
+                <div class="about__info">
+                  <h3 class="about__subtitle">Easy to use</h3>
+
+                  <p class="about__desc">
+                    Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
+                  </p>
+                </div>
+              </li>
+              <li class="about__item">
+                <svg class="about__icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-checkbox"></use>
+                </svg>
+                <div class="about__info">
+                  <h3 class="about__subtitle">Best user experince</h3>
+
+                  <p class="about__desc">
+                    Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Section Features -->
+      <section class="section section--features">
+        <div class="container">
+          <h2 class="section__title section__title--white">App features</h2>
+          <p class="section__desc section__desc--white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+            nunc ante velit vitae.
+          </p>
+          <div class="features__option features__option--top">
+            <svg class="features__icon" width="50" height="50">
+              <use href="./images/sprite.svg#icon-comment"></use>
+            </svg>
+            <div class="features__info">
+              <h3 class="features__subtitle">Full free chat</h3>
+              <p class="features__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+          <div class="features__wrapper">
+            <ul class="features__list--leftside">
+              <li class="features__item">
+                <svg class="features__icon" width="50" height="50">
+                  <use href="./images/sprite.svg#icon-browser"></use>
+                </svg>
+                <div class="features__info">
+                  <h3 class="features__subtitle">unlimited features</h3>
+                  <p class="features__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </li>
+              <li class="features__item">
+                <svg class="features__icon" width="50" height="50">
+                  <use href="./images/sprite.svg#icon-vector"></use>
+                </svg>
+                <div class="features__info">
+                  <h3 class="features__subtitle">awsome ui design</h3>
+                  <p class="features__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <div>
+              <picture>
+                <source
+                  srcset="./images/features-image.png"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/features-image-desktop.png"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/features-image-tablet.png"
+                  media="(max-width: 1199px)"
+                />
+                <img
+                  class="features__image"
+                  src="./images/features-image.png"
+                  alt="smartphone picture"
+                />
+              </picture>
+            </div>
+            <ul class="features__list--rightside">
+              <li class="features__item">
+                <svg class="features__icon" width="50" height="50">
+                  <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>
+                <div class="features__info">
+                  <h3 class="features__subtitle">iso & androind version</h3>
+                  <p class="features__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </li>
+              <li class="features__item">
+                <svg class="features__icon" width="50" height="50">
+                  <use href="./images/sprite.svg#icon-eye-scanner"></use>
+                </svg>
+                <div class="features__info">
+                  <h3 class="features__subtitle">retina ready greaphics</h3>
+                  <p class="features__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="features__option features__option--bot">
+            <svg class="features__icon" width="50" height="50">
+              <use href="./images/sprite.svg#icon-telemarketer"></use>
+            </svg>
+            <div class="features__info">
+              <h3 class="features__subtitle">24/7 support by real pepole</h3>
+              <p class="features__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section App -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Checkout Our App Interface Look</h2>
+          <p class="section__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+            nunc ante velit vitae.
+          </p>
+          <div></div>
+          <div class="app__wrapper">
+            <div class="app__box">
+              <h2 class="section__title section__title--app">
+                Download App Now
+              </h2>
+              <p class="section__desc section__desc--app">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              </p>
+              <ul class="app__stores--list">
+                <li>
+                  <img
+                    src="./images/google-play.png"
+                    alt="google play shortcut"
+                    width="149"
+                    height="47"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./images/app-store.png"
+                    alt="app store shortcut"
+                    width="149"
+                    height="47"
+                  />
+                </li>
+              </ul>
+              <ul class="app__list">
+                <li class="app__item">
+                  <svg class="app__icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-download"></use>
+                  </svg>
+                  <p class="app__number">59865</p>
+                  <p class="app__action">Downloads</p>
+                </li>
+                <li class="app__item">
+                  <svg class="app__icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-thumb"></use>
+                  </svg>
+                  <p class="app__number">29852</p>
+                  <p class="app__action">Likes</p>
+                </li>
+                <li class="app__item">
+                  <svg class="app__icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-star"></use>
+                  </svg>
+                  <p class="app__number">1500</p>
+                  <p class="app__action">5 star rating</p>
+                </li>
+              </ul>
+            </div>
+            <picture class="app__picture">
+              <source
+                srcset="./images/app-image-desktop.png"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/app-image.png"
+                media="(max-width: 1199px)"
+              />
+              <img src="./images/app-image.png" alt="smartphone picture" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <!-- Section Tip -->
+      <section class="section section--tip">
+        <div class="container">
+          <h2 class="section__title section__title--white">
+            how to use the app perfectly
+          </h2>
+          <p class="section__desc section__desc--white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+            nunc ante velit vitae.
+          </p>
+
+          <video controls class="tip__video" poster="./images/video-poster.png">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
