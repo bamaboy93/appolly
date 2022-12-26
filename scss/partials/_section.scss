@@ -2,7 +2,12 @@
   padding: 60px 0;
   text-align: center;
 
-  &--features {
+  @media screen and (min-width: $tablet) {
+    padding: 120px 0;
+  }
+
+  &--features,
+  &--customers {
     background: url(../../images/features-bg-mobile.png);
 
     @media screen and (min-width: $tablet) {
@@ -10,6 +15,17 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+    }
+  }
+
+  &--team {
+    padding-top: 130px;
+    @media screen and (min-width: $tablet) {
+      padding-top: 220px;
+      padding-bottom: 120px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-top: 280px;
     }
   }
 }

@@ -1,0 +1,49 @@
+@media screen and (max-width: $max-mobile) {
+  .section--customers {
+    display: none;
+  }
+}
+
+.customers__list {
+  display: flex;
+  justify-content: center;
+}
+
+.customers__item {
+  width: 236px;
+  padding: 20px 30px;
+  background-color: $white;
+  box-shadow: $secondary-box-shadow;
+  border-radius: 10px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 350px;
+    transition: scale 250ms ease-in;
+    &:hover {
+      scale: 1.5;
+    }
+  }
+}
+
+.customers__image {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 12px;
+  border: 2px solid $accent;
+  border-radius: 50%;
+}
+
+.customers__name {
+  font-weight: 600;
+  font-size: 25px;
+  color: $dark-grey;
+}
+
+.customers__pos {
+  margin-bottom: 18px;
+  color: $dark-grey;
+}

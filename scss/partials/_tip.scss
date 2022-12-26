@@ -5,9 +5,7 @@
     padding-bottom: 150px;
     background-image: url(../../images/tip-bg.png);
     background-position: center;
-  }
-  @media screen and (min-width: $desktop) {
-    padding-bottom: 200px;
+    background-repeat: no-repeat;
   }
 }
 

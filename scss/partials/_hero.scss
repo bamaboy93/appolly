@@ -28,6 +28,7 @@
   width: 323px;
   padding: 30px 12px 20px 18px;
   background-color: $white;
+  box-shadow: $secondary-box-shadow;
 
   @media screen and (min-width: $tablet) {
     align-self: center;

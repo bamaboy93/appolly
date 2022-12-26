@@ -1,0 +1,118 @@
+.team__list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+.team__item {
+  width: 343px;
+  padding: 30px 15px 50px 15px;
+  box-shadow: $secondary-box-shadow;
+  border-radius: 10px;
+
+  @media screen and (max-width: $max-mobile) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 213px;
+    padding: 30px 17px;
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 370px;
+    padding: 30px 22px 53px 22px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.team__photo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border: thick double $accent;
+  border-radius: 50%;
+  box-shadow: $secondary-box-shadow;
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.team__name {
+  font-weight: 700;
+  font-size: 31.25px;
+  text-transform: uppercase;
+  color: $dark-grey;
+}
+
+.team__pos {
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.team__desc {
+  margin-bottom: 30px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials__link {
+  width: 18px;
+  height: 18px;
+  color: $dark-grey;
+
+  &:hover .socials__icon,
+  &:focus .socials__icon {
+    color: $accent;
+  }
+}
+
+.socials__icon {
+  fill: currentColor;
+  transition: color 250ms $cubic;
+}
+
+.socials__item:first-child {
+  padding-right: 25px;
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    padding-right: 15px;
+  }
+}
+.socials__item:nth-child(2) {
+  padding: 0 25px;
+
+  border-left: 2px solid $light-grey;
+
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    padding: 0 15px;
+  }
+}
+
+.socials__item:nth-child(3) {
+  padding: 0 25px;
+  border-right: 2px solid $light-grey;
+  border-left: 2px solid $light-grey;
+
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    padding: 0 15px;
+  }
+}
+
+.socials__item:last-child {
+  padding-left: 25px;
+
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    padding-left: 15px;
+  }
+}

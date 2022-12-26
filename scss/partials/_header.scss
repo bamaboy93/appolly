@@ -27,10 +27,17 @@
   font-size: 16px;
   line-height: 1.5;
   color: $white;
+
+  transition: color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $dark-grey;
+  }
 }
 .header-topline__icon {
   margin-right: 20px;
-  fill: $white;
+  fill: currentColor;
 }
 
 .header-socials {
@@ -41,8 +48,19 @@
 .header-socials__item:not(:last-child) {
   margin-right: 30px;
 }
+
+.header-socials__link {
+  color: $white;
+
+  &:hover .header-socials__icon,
+  &:focus .header-socials__icon {
+    color: $dark-grey;
+  }
+}
+
 .header-socials__icon {
-  fill: $white;
+  fill: currentColor;
+  transition: color 250ms $cubic;
 }
 
 .header-main {
@@ -52,7 +70,7 @@
   justify-content: space-between;
   padding: 3px 3px 3px 9px;
   background-color: $white;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: $main-box-shadow;
   border-radius: 3px;
   @media screen and (min-width: $desktop) {
     padding: 3px 3px 3px 56px;
@@ -76,11 +94,18 @@
   width: 100px;
   padding: 20px 11px;
   background-color: $white;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: $secondary-box-shadow;
   border-radius: 5px;
   @media screen and (min-width: $tablet) {
     width: 200px;
     padding: 31px 11px;
+  }
+}
+
+@media screen and (max-width: $max-mobile) {
+  .logo {
+    width: 79px;
+    height: 12px;
   }
 }
 
@@ -108,6 +133,18 @@
   color: $black;
 
   text-transform: uppercase;
+
+  transition: color 250ms $cubic;
+
+  &--current {
+    color: $accent;
+    text-decoration: underline;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
 }
 
 .header-main__button {
@@ -122,8 +159,18 @@
 
   color: $white;
   background-color: $accent;
+  box-shadow: $secondary-box-shadow;
 
   cursor: pointer;
+
+  transition: all 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    outline: 2px solid $accent;
+    color: $dark-grey;
+  }
 
   @media screen and (min-width: $tablet) {
     padding: 12px 15px;
