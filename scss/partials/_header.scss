@@ -77,15 +77,6 @@
   }
 }
 
-.header-main__button--menu {
-  border: transparent;
-  background: transparent;
-  outline: none;
-  @media screen and (min-width: $desktop) {
-    display: none;
-  }
-}
-
 .header-main__logo {
   position: absolute;
   top: 50%;
@@ -176,5 +167,85 @@
     padding: 12px 15px;
     font-size: 20px;
     line-height: 1.5;
+  }
+}
+
+// Mobile Menu
+
+.menu-toggle {
+  margin: 0;
+
+  border: none;
+  background-color: transparent;
+  color: $dark-grey;
+  transition: color 250ms $cubic;
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    color: $accent;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.menu-button.is-open {
+  z-index: 2;
+}
+.menu-button__icon {
+  fill: currentColor;
+}
+.menu-button .icon-close {
+  display: none;
+}
+.menu-button.is-open .icon-close {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60vh;
+  padding: 67px 90px 0px 40px;
+  background-color: $white;
+  z-index: 999;
+  text-align: left;
+
+  transform: translateX(100%);
+  transition: transform 250ms $cubic;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: $accent;
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+.mobile-menu__link {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $dark-grey;
+  transition: color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+    text-decoration: underline;
   }
 }

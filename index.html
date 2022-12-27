@@ -96,11 +96,53 @@
                 <a class="header-main__link" href="#">Features</a>
               </li>
             </ul>
-            <button type="button" class="header-main__button--menu">
-              <svg width="24" height="24">
+            <button
+              type="button"
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                class="menu-button__icon"
+                width="24"
+                height="24"
+                aria-label="Mobile menu switcher"
+              >
                 <use href="./images/sprite.svg#icon-menu"></use>
               </svg>
             </button>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+              <button class="menu-toggle js-close-menu">
+                <svg
+                  class="menu-button__icon"
+                  width="24"
+                  height="24"
+                  aria-label="Mobile menu switcher"
+                >
+                  <use
+                    class="icon-close"
+                    href="./images/sprite.svg#icon-cross"
+                  ></use>
+                </svg>
+              </button>
+              <ul class="mobile-menu">
+                <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">Home</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">About</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">Features</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">Screenshot</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">Blog</a>
+                </li>
+              </ul>
+            </div>
             <div class="header-main__logo">
               <a href="/"
                 ><img
@@ -907,5 +949,12 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="./js/carousel.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
