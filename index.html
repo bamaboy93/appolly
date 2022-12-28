@@ -19,7 +19,7 @@
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <title>Appolly</title>
+    <title>Appolly | Home</title>
   </head>
   <body>
     <div class="header-hero__wrapper">
@@ -127,7 +127,11 @@
               </button>
               <ul class="mobile-menu">
                 <li class="mobile-menu__item">
-                  <a href="#" class="mobile-menu__link">Home</a>
+                  <a
+                    href="./index.html"
+                    class="mobile-menu__link header-main__link--current"
+                    >Home</a
+                  >
                 </li>
                 <li class="mobile-menu__item">
                   <a href="#" class="mobile-menu__link">About</a>
@@ -139,7 +143,7 @@
                   <a href="#" class="mobile-menu__link">Screenshot</a>
                 </li>
                 <li class="mobile-menu__item">
-                  <a href="#" class="mobile-menu__link">Blog</a>
+                  <a href="./blog.html" class="mobile-menu__link">Blog</a>
                 </li>
               </ul>
             </div>
@@ -158,7 +162,7 @@
                 <a class="header-main__link" href="#">Screenshot</a>
               </li>
               <li class="header-main__item">
-                <a class="header-main__link" href="#">Blog</a>
+                <a class="header-main__link" href="./blog.html">Blog</a>
               </li>
             </ul>
             <button class="header-main__button" type="button">DOWNLOAD</button>
@@ -197,21 +201,13 @@
             </ul>
           </div>
           <div class="hero__image">
-            <picture>
-              <source
-                srcset="./images/hero-image.png"
-                media="(max-width: 767px)"
-              />
-              <source
-                srcset="./images/hero-image-desktop.png"
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset="./images/hero-image-tablet.png"
-                media="(max-width: 1199px)"
-              />
-              <img src="./images/hero-image.png" alt="smartphone picture" />
-            </picture>
+            <img
+              class="hero__image--img"
+              src="./images/hero-image.png"
+              alt="smartphone picture"
+              width="265"
+              height="520"
+            />
           </div>
         </div>
       </section>
@@ -230,18 +226,13 @@
 
           <div class="about__wrapper">
             <div class="picture__wrapper">
-              <picture>
-                <source
-                  srcset="./images/smartphone.png"
-                  media="(max-width: 1199px)"
-                />
-                <source
-                  srcset="./images/smartphone-desktop.png"
-                  media="(min-width: 1200px)"
-                />
-
-                <img src="./images/smartphone.png" alt="smartphone picture" />
-              </picture>
+              <img
+                class="picture_wrapper--image"
+                src="./images/smartphone.png"
+                alt="smartphone picture"
+                width="238"
+                height="324"
+              />
             </div>
             <ul class="about__list">
               <li class="about__item">
@@ -328,27 +319,15 @@
                 </div>
               </li>
             </ul>
-            <div>
-              <picture>
-                <source
-                  srcset="./images/features-image.png"
-                  media="(max-width: 767px)"
-                />
-                <source
-                  srcset="./images/features-image-desktop.png"
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="./images/features-image-tablet.png"
-                  media="(max-width: 1199px)"
-                />
-                <img
-                  class="features__image"
-                  src="./images/features-image.png"
-                  alt="smartphone picture"
-                />
-              </picture>
-            </div>
+
+            <img
+              class="features__image"
+              src="./images/features-image.png"
+              alt="smartphone picture"
+              width="214"
+              height="468"
+            />
+
             <ul class="features__list--rightside">
               <li class="features__item">
                 <svg class="features__icon" width="50" height="50">
@@ -497,17 +476,15 @@
                 </li>
               </ul>
             </div>
-            <picture class="app__picture">
-              <source
-                srcset="./images/app-image-desktop.png"
-                media="(min-width: 1200px)"
+            <div class="app__picture">
+              <img
+                class="app__image"
+                src="./images/app-image.png"
+                alt="smartphone picture"
+                width="334"
+                height="311"
               />
-              <source
-                srcset="./images/app-image.png"
-                media="(max-width: 1199px)"
-              />
-              <img src="./images/app-image.png" alt="smartphone picture" />
-            </picture>
+            </div>
           </div>
         </div>
       </section>
@@ -539,7 +516,7 @@
             <li class="team__item">
               <img
                 class="team__photo"
-                src="./images/carla.png"
+                src="./images/team/carla.png"
                 alt="Carla Press photo"
                 width="198"
                 height="198"
@@ -593,7 +570,7 @@
             <li class="team__item">
               <img
                 class="team__photo"
-                src="./images/craig.png"
+                src="./images/team/craig.png"
                 alt="Craig Gouse photo"
                 width="198"
                 height="198"
@@ -647,7 +624,7 @@
             <li class="team__item">
               <img
                 class="team__photo"
-                src="./images/jocelyn.png"
+                src="./images/team/jocelyn.png"
                 alt="Jocelyn Septim photo"
                 width="198"
                 height="198"
@@ -762,7 +739,7 @@
           </ul>
         </div>
       </section>
-      <!-- Section Blog -->
+      <!-- Section Articles -->
       <section class="section">
         <div class="container">
           <h2 class="section__title">Our recent blog</h2>
@@ -770,65 +747,65 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
             nunc ante velit vitae.
           </p>
-          <ul class="blog__list">
-            <li class="blog__item">
+          <ul class="articles__list">
+            <li class="articles__item">
               <img
-                class="blog__image"
+                class="articles__image"
                 src="./images/blog-image.jpg"
                 alt="smartphone picture with snapchat shortcut"
                 width="343"
                 height="228"
               />
-              <div class="blog__info">
-                <h3 class="blog__title">
+              <div class="articles__info">
+                <h3 class="articles__title">
                   The Snap Pixel: How It Works and How to Install
                 </h3>
-                <p class="blog__desc">
+                <p class="articles__desc">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Viverra nunc ante velit vitae. Est tellus vitae, nullam
                   lobortis enim.
                 </p>
-                <a class="blog__link" href="#">Read more</a>
+                <a class="articles__link" href="#">Read more</a>
               </div>
             </li>
-            <li class="blog__item">
+            <li class="articles__item">
               <img
-                class="blog__image"
+                class="articles__image"
                 src="./images/blog-image2.jpg"
                 alt="smartphone picture with instagram shortcut"
                 width="343"
                 height="228"
               />
-              <div class="blog__info">
-                <h3 class="blog__title">
+              <div class="articles__info">
+                <h3 class="articles__title">
                   Global Partner Solutions: A Partnership of Innova
                 </h3>
-                <p class="blog__desc">
+                <p class="articles__desc">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Viverra nunc ante velit vitae. Est tellus vitae, nullam
                   lobortis enim.
                 </p>
-                <a class="blog__link" href="#">Read more</a>
+                <a class="articles__link" href="#">Read more</a>
               </div>
             </li>
-            <li class="blog__item">
+            <li class="articles__item">
               <img
-                class="blog__image"
+                class="articles__image"
                 src="./images/blog-image3.jpg"
                 alt="smartphone picture with snapchat"
                 width="343"
                 height="228"
               />
-              <div class="blog__info">
-                <h3 class="blog__title">
+              <div class="articles__info">
+                <h3 class="articles__title">
                   An opportunity for Snapchatters to start free
                 </h3>
-                <p class="blog__desc">
+                <p class="articles__desc">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Viverra nunc ante velit vitae. Est tellus vitae, nullam
                   lobortis enim.
                 </p>
-                <a class="blog__link" href="#">Read more</a>
+                <a class="articles__link" href="#">Read more</a>
               </div>
             </li>
           </ul>
@@ -913,7 +890,7 @@
                 <a class="footer__link" href="#">Screenshot</a>
               </li>
               <li class="footer__links--item">
-                <a class="footer__link" href="#">Blog</a>
+                <a class="footer__link" href="./blog.html">Blog</a>
               </li>
             </ul>
           </div>

@@ -4,8 +4,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #6c6c72;
-  background-color: #fff;
+  color: $light-grey;
+  background-color: $white;
 }
 .container {
   margin-left: auto;
@@ -34,8 +34,15 @@ body {
   background: url(../../images/bg-image.png);
   background-repeat: no-repeat;
   background-size: cover;
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $max-tablet) {
     background-position: center;
+  }
+
+  &--page-blog {
+    background: url(../../images/tip-bg.png);
+    @media screen and (max-width: $max-tablet) {
+      background-position: center;
+    }
   }
 }
 

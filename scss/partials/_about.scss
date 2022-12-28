@@ -24,6 +24,13 @@
   }
 }
 
+.picture_wrapper--image {
+  @media screen and (min-width: $desktop) {
+    width: 386px;
+    height: 526px;
+  }
+}
+
 .about__list {
   @media screen and (min-width: $desktop) {
     padding-top: 50px;

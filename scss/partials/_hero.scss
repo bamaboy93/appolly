@@ -1,8 +1,8 @@
 .hero {
   padding-top: 100px;
   padding-bottom: 120px;
+  text-align: center;
   @media screen and (min-width: $tablet) {
-    padding-top: 150px;
     padding-bottom: 150px;
   }
   @media screen and (min-width: $desktop) {
@@ -117,5 +117,12 @@
   @media screen and (max-width: $max-mobile) {
     display: flex;
     justify-content: center;
+  }
+}
+
+.hero__image--img {
+  @media screen and (min-width: $desktop) {
+    width: 366px;
+    height: 716px;
   }
 }

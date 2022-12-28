@@ -1,10 +1,10 @@
-.blog__list {
+.articles__list {
   @media screen and (min-width: $tablet) {
     display: flex;
   }
 }
 
-.blog__item {
+.articles__item {
   width: 343px;
   box-shadow: $secondary-box-shadow;
   border-radius: 10px;
@@ -30,7 +30,7 @@
   }
 }
 
-.blog__image {
+.articles__image {
   @media screen and (min-width: $tablet) {
     width: 213px;
   }
@@ -39,12 +39,12 @@
   }
 }
 
-.blog__info {
+.articles__info {
   padding: 30px 7px 30px 18px;
   text-align: left;
 }
 
-.blog__title {
+.articles__title {
   margin-bottom: 18px;
   font-weight: 600;
   font-size: 20px;
@@ -52,11 +52,11 @@
   color: $dark-grey;
 }
 
-.blog__desc {
+.articles__desc {
   margin-bottom: 18px;
 }
 
-.blog__link {
+.articles__link {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.3;

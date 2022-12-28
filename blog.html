@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Appolly | Blog</title>
+  </head>
+  <body>
+    <div class="header-hero__wrapper header-hero__wrapper--page-blog">
+      <header class="header">
+        <div class="container">
+          <div class="header-topline">
+            <ul class="header-topline__list">
+              <li class="header-topline__item">
+                <a class="header-topline__link" href="mailto:info@youremail.com"
+                  ><svg class="header-topline__icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-mail"></use></svg
+                  >info@youremail.com</a
+                >
+              </li>
+              <li class="header-topline__item">
+                <a class="header-topline__link" href="tel:(480) 555-0103"
+                  ><svg class="header-topline__icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-phone-fill"></use></svg
+                  >(480) 555-0103</a
+                >
+              </li>
+            </ul>
+
+            <ul class="header-socials">
+              <li class="header-socials__item">
+                <a
+                  target="_blank"
+                  class="header-socials__link"
+                  href="https://www.facebook.com/"
+                  ><svg class="header-socials__icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="header-socials__item">
+                <a
+                  target="_blank"
+                  class="header-socials__link"
+                  href="https://www.instagram.com/"
+                  ><svg class="header-socials__icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="header-socials__item">
+                <a
+                  target="_blank"
+                  class="header-socials__link"
+                  href="https://twitter.com/?lang=uk"
+                  ><svg class="header-socials__icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="header-socials__item">
+                <a
+                  target="_blank"
+                  class="header-socials__link"
+                  href="https://www.youtube.com/"
+                  ><svg class="header-socials__icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-youtube"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-main">
+            <ul class="header-main__list">
+              <li class="header-main__item">
+                <a class="header-main__link" href="./index.html">Home</a>
+              </li>
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">About</a>
+              </li>
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">Features</a>
+              </li>
+            </ul>
+            <button
+              type="button"
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                class="menu-button__icon"
+                width="24"
+                height="24"
+                aria-label="Mobile menu switcher"
+              >
+                <use href="./images/sprite.svg#icon-menu"></use>
+              </svg>
+            </button>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+              <button class="menu-toggle js-close-menu">
+                <svg
+                  class="menu-button__icon"
+                  width="24"
+                  height="24"
+                  aria-label="Mobile menu switcher"
+                >
+                  <use
+                    class="icon-close"
+                    href="./images/sprite.svg#icon-cross"
+                  ></use>
+                </svg>
+              </button>
+              <ul class="mobile-menu">
+                <li class="mobile-menu__item">
+                  <a href="./index.html" class="mobile-menu__link">Home</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">About</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">Features</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">Screenshot</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a
+                    href="./blog.html"
+                    class="mobile-menu__link header-main__link--current"
+                    >Blog</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="header-main__logo">
+              <a href="/"
+                ><img
+                  class="logo"
+                  src="./images/logo.png"
+                  alt="logo"
+                  width="167"
+                  height="28"
+              /></a>
+            </div>
+            <ul class="header-main__list header-main__list--right">
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">Screenshot</a>
+              </li>
+              <li class="header-main__item">
+                <a
+                  class="header-main__link header-main__link--current"
+                  href="./blog.html"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+            <button class="header-main__button" type="button">DOWNLOAD</button>
+          </div>
+        </div>
+      </header>
+      <section class="hero blog__hero container">
+        <h1 class="blog__hero--title">Blog</h1>
+        <p class="blog__heading">
+          <svg class="blog__icon" width="16" height="15">
+            <use href="./images/sprite.svg#icon-home"></use></svg
+          >Home/Blog
+        </p>
+      </section>
+    </div>
+    <main>
+      <section class="section">
+        <div class="container blog__main">
+          <div class="blog__articles">
+            <div class="articles__search">
+              <form class="search__form" action="search">
+                <input
+                  class="search__input"
+                  type="search"
+                  placeholder="Search for...."
+                /><svg class="search__icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-search-line"></use>
+                </svg>
+              </form>
+            </div>
+            <ul class="blog__list">
+              <li class="blog__item">
+                <img
+                  class="blog__image"
+                  src="./images/blog/Image.jpg"
+                  alt=""
+                  width="770"
+                  height="300"
+                />
+                <h2 class="blog__title">
+                  The Snap Pixel: How It Works and How to Install
+                </h2>
+                <p class="blog__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Molestie blandit nibh risus nisl, scelerisque. Fusce cursus
+                  massa ut egestas. Massa lorem turpis lectus viverra. Nulla
+                  volutpat urna eget velit vel at gravida fermentum, sem.Ut
+                  ullamcorper scelerisque interdum bibendum non tristique
+                  nullam. Netus nisl, leo nunc eu tincidunt vivamus nisi
+                  suspendisse. Non morbi eleifend sit ac.
+                </p>
+                <a class="blog__link" href="#">Read More</a>
+              </li>
+              <li class="blog__item">
+                <img
+                  class="blog__image"
+                  src="./images/blog/Image2.jpg"
+                  alt=""
+                  width="770"
+                  height="300"
+                />
+                <h2 class="blog__title">
+                  Have brands given up on International Women's Day?
+                </h2>
+                <p class="blog__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Molestie blandit nibh risus nisl, scelerisque. Fusce cursus
+                  massa ut egestas. Massa lorem turpis lectus viverra. Nulla
+                  volutpat urna eget velit vel at gravida fermentum, sem.Ut
+                  ullamcorper scelerisque interdum bibendum non tristique
+                  nullam. Netus nisl, leo nunc eu tincidunt vivamus nisi
+                  suspendisse. Non morbi eleifend sit ac.
+                </p>
+                <a class="blog__link" href="#">Read More</a>
+              </li>
+              <li class="blog__item">
+                <img
+                  class="blog__image"
+                  src="./images/blog/Image3.jpg"
+                  alt=""
+                  width="770"
+                  height="300"
+                />
+                <h2 class="blog__title">
+                  6 Designers On The Brands Empowering Women Today
+                </h2>
+                <p class="blog__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Molestie blandit nibh risus nisl, scelerisque. Fusce cursus
+                  massa ut egestas. Massa lorem turpis lectus viverra. Nulla
+                  volutpat urna eget velit vel at gravida fermentum, sem.Ut
+                  ullamcorper scelerisque interdum bibendum non tristique
+                  nullam. Netus nisl, leo nunc eu tincidunt vivamus nisi
+                  suspendisse. Non morbi eleifend sit ac.
+                </p>
+                <a class="blog__link" href="#">Read More</a>
+              </li>
+              <li class="blog__item">
+                <img
+                  class="blog__image"
+                  src="./images/blog/Image4.jpg"
+                  alt=""
+                  width="770"
+                  height="300"
+                />
+                <h2 class="blog__title">
+                  Gillette Launches Planet KIND, A Slightly More Sustainable
+                  Line Of Personal Care.
+                </h2>
+                <p class="blog__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Molestie blandit nibh risus nisl, scelerisque. Fusce cursus
+                  massa ut egestas. Massa lorem turpis lectus viverra. Nulla
+                  volutpat urna eget velit vel at gravida fermentum, sem.Ut
+                  ullamcorper scelerisque interdum bibendum non tristique
+                  nullam. Netus nisl, leo nunc eu tincidunt vivamus nisi
+                  suspendisse. Non morbi eleifend sit ac.
+                </p>
+                <a class="blog__link" href="#">Read More</a>
+              </li>
+              <li class="blog__item">
+                <img
+                  class="blog__image"
+                  src="./images/blog/Image5.jpg"
+                  alt=""
+                  width="770"
+                  height="300"
+                />
+                <h2 class="blog__title">
+                  The Snap Pixel: How It Works and How to Install
+                </h2>
+                <p class="blog__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Molestie blandit nibh risus nisl, scelerisque. Fusce cursus
+                  massa ut egestas. Massa lorem turpis lectus viverra. Nulla
+                  volutpat urna eget velit vel at gravida fermentum, sem.Ut
+                  ullamcorper scelerisque interdum bibendum non tristique
+                  nullam. Netus nisl, leo nunc eu tincidunt vivamus nisi
+                  suspendisse. Non morbi eleifend sit ac.
+                </p>
+                <a class="blog__link" href="#">Read More</a>
+              </li>
+            </ul>
+          </div>
+          <div class="blog__rightside">
+            <div class="search">
+              <form class="search__form" action="search">
+                <input
+                  class="search__input"
+                  type="search"
+                  placeholder="Search for...."
+                /><svg class="search__icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-search-line"></use>
+                </svg>
+              </form>
+            </div>
+            <h3 class="rightside__title">Recent Post</h3>
+            <ul class="rightside__list">
+              <li class="rightside__item">
+                <a href="#"
+                  ><img
+                    class="rightside__image"
+                    src="./images/blog/Image-s.jpg"
+                    alt=""
+                    width="370"
+                    height="180"
+                  />
+                  <h4 class="rightside__subtitle">
+                    Irina Rozovsky captures Brooklyn's Prospect Park in a
+                    romantic light
+                  </h4></a
+                >
+              </li>
+              <li class="rightside__item">
+                <a href="#"
+                  ><img
+                    class="rightside__image"
+                    src="./images/blog/Image-s1.jpg"
+                    alt=""
+                    width="370"
+                    height="180"
+                  />
+                  <h4 class="rightside__subtitle">
+                    A new online show is tracing leading artists early commer-
+                    cial practice
+                  </h4></a
+                >
+              </li>
+              <li class="rightside__item">
+                <a href="#"
+                  ><img
+                    class="rightside__image"
+                    src="./images/blog/Image-s2.jpg"
+                    alt=""
+                    width="370"
+                    height="180"
+                  />
+                  <h4 class="rightside__subtitle">
+                    Think Food Bank project uses stickers to prompt people to
+                    contribute
+                  </h4></a
+                >
+              </li>
+              <li class="rightside__item">
+                <a href="#"
+                  ><img
+                    class="rightside__image"
+                    src="./images/blog/Image-s3.jpg"
+                    alt=""
+                    width="370"
+                    height="180"
+                  />
+                  <h4 class="rightside__subtitle">
+                    A new photo book is celebra ting LA's vibrant lowrider
+                    culture
+                  </h4></a
+                >
+              </li>
+              <li class="rightside__item">
+                <a href="#"
+                  ><img
+                    class="rightside__image"
+                    src="./images/blog/Image-s4.jpg"
+                    alt=""
+                    width="370"
+                    height="180"
+                  />
+                  <h4 class="rightside__subtitle">
+                    The indie publishers adapting to the pandemic
+                  </h4></a
+                >
+              </li>
+            </ul>
+            <h3 class="rightside__title">Category</h3>
+            <ul class="rightside__list--category">
+              <li class="rightside__item--category">
+                <svg class="rightside__item--icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-arrow-right"></use>
+                </svg>
+                <a class="rightside__link" href="#">E-commers app</a>
+              </li>
+              <li class="rightside__item--category">
+                <svg class="rightside__item--icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-arrow-right"></use>
+                </svg>
+                <a class="rightside__link" href="#">Banking app</a>
+              </li>
+              <li class="rightside__item--category">
+                <svg class="rightside__item--icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-arrow-right"></use>
+                </svg>
+                <a class="rightside__link" href="#">Business app</a>
+              </li>
+              <li class="rightside__item--category">
+                <svg class="rightside__item--icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-arrow-right"></use>
+                </svg>
+                <a class="rightside__link" href="#">video app</a>
+              </li>
+            </ul>
+            <h3 class="rightside__title">Tags</h3>
+            <ul class="rightside__list--tags">
+              <li class="rightside__item--tags">
+                <a class="rightside__link rightside__link--tags" href="#"
+                  >ecommers app</a
+                >
+              </li>
+              <li class="rightside__item--tags">
+                <a class="rightside__link rightside__link--tags" href="#"
+                  >music app</a
+                >
+              </li>
+              <li class="rightside__item--tags">
+                <a class="rightside__link rightside__link--tags" href="#"
+                  >bank app</a
+                >
+              </li>
+              <li class="rightside__item--tags">
+                <a class="rightside__link rightside__link--tags" href="#"
+                  >social app</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__leftside">
+            <a class="footer__logo" href="#">LOGO</a>
+            <p class="footer__desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+              nunc ante velit vitae.
+            </p>
+            <ul class="socials socials--footer">
+              <li class="socials__item">
+                <a
+                  target="_blank"
+                  class="socials__link socials__link--footer"
+                  href="https://www.facebook.com/"
+                  ><svg
+                    class="socials__icon socials__icon--footer"
+                    width="18"
+                    height="18"
+                  >
+                    <use href="./images/sprite.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="socials__item">
+                <a
+                  target="_blank"
+                  class="socials__link socials__link--footer"
+                  href="https://www.instagram.com/"
+                  ><svg
+                    class="socials__icon socials__icon--footer"
+                    width="18"
+                    height="18"
+                  >
+                    <use href="./images/sprite.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="socials__item">
+                <a
+                  target="_blank"
+                  class="socials__link socials__link--footer"
+                  href="https://twitter.com/?lang=uk"
+                  ><svg
+                    class="socials__icon socials__icon--footer"
+                    width="18"
+                    height="18"
+                  >
+                    <use href="./images/sprite.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="socials__item">
+                <a
+                  target="_blank"
+                  class="socials__link socials__link--footer"
+                  href="https://www.youtube.com/"
+                  ><svg
+                    class="socials__icon socials__icon--footer"
+                    width="18"
+                    height="18"
+                  >
+                    <use href="./images/sprite.svg#icon-youtube"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__center">
+            <h3 class="footer__title">quick link</h3>
+            <ul class="footer__links">
+              <li class="footer__links--item">
+                <a class="footer__link" href="./index.html">Home</a>
+              </li>
+              <li class="footer__links--item">
+                <a class="footer__link" href="#">About</a>
+              </li>
+              <li class="footer__links--item">
+                <a class="footer__link" href="#">Features</a>
+              </li>
+              <li class="footer__links--item">
+                <a class="footer__link" href="#">Screenshot</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__rightside">
+            <h3 class="footer__title">news letter</h3>
+            <p class="footer__desc">
+              Subscribe our newsletter to get our latest update & news
+            </p>
+            <form class="footer__form" action="">
+              <input
+                class="footer__input"
+                type="email"
+                placeholder="Your email address"
+              />
+              <button type="submit" class="footer__input--button">
+                <svg class="footer__input--icon" width="22" height="24">
+                  <use href="./images/sprite.svg#icon-send-plane"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer__copyrights">
+          <svg class="footer__copyrights--icon" width="15" height="15">
+            <use href="./images/sprite.svg#icon-copyright"></use>
+          </svg>
+          <p class="footer__copyrights--text">
+            Copyright 2021 .Ojjomedia. All Right Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

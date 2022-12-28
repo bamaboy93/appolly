@@ -21,6 +21,13 @@
   }
 }
 
+.app__image {
+  @media screen and (min-width: $desktop) {
+    width: 516px;
+    height: 480px;
+  }
+}
+
 .app__stores--list {
   display: flex;
   justify-content: space-between;

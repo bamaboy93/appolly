@@ -18,6 +18,18 @@
   }
 }
 
+.features__image {
+  @media screen and (max-width: $max-mobile) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 375px;
+    height: 812px;
+  }
+}
+
 .features__wrapper {
   @media screen and (min-width: $tablet) {
     display: flex;
